@@ -1,11 +1,33 @@
 .spanBlock {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .span {
+    cursor: pointer;
+    color: #1a1a2e;
+    font-size: 1rem;
+    padding: 2px 4px;
+    border-bottom: 1px dashed #4ecdc4;
+    min-width: 120px;
+}
+
+.span:hover {
+    color: #16213e;
 }
 
 .input {
+    min-width: 200px;
 }
 
 .pen {
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.pen:hover {
+    opacity: 1;
 }

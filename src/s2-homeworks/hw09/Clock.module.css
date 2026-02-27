@@ -1,14 +1,32 @@
 .buttonsContainer {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
 }
 
 .clock {
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .watch {
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #1f2933;
+    color: #e5e7eb;
+    cursor: default;
 }
 
 .watch strong {
+    font-weight: 600;
 }
 
 .more {
+    min-height: 24px;
+    text-align: center;
+    color: #6b7280;
 }

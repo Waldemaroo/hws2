@@ -38,8 +38,8 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                setText(res.data.info ?? '')
-                setInfo('')
+                setText(res.data.errorText ?? '')
+                setInfo(res.data.info ?? '')
             })
             .catch((e) => {
                 const status = e.response?.status
@@ -56,8 +56,13 @@ const HW13 = () => {
                     setImage(errorUnknown)
                 }
 
-                setText(data?.info ?? e.message ?? '')
-                setInfo(data?.errorText ?? '')
+                if (data) {
+                    setText(data.errorText ?? '')
+                    setInfo(data.info ?? '')
+                } else {
+                    setText('')
+                    setInfo(e.message || 'Error')
+                }
             })
             .finally(() => {
                 setIsLoading(false)

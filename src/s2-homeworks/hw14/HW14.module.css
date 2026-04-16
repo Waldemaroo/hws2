@@ -1,7 +1,16 @@
 .tech {
-
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1f1f1f;
+    margin-top: 8px;
 }
 
 .loading {
-
+    min-height: 24px;
+    margin-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #06c;
 }
